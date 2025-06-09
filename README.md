@@ -18,7 +18,6 @@ To root your Moto G Pure without a custom recovery
    ```
 > Then visit the motorola bootloader unlock site
  <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">Bootloader Unlock</a><br>
-> Unlock the bootloader
 
    ```
    fastboot oem unlock <your_unlock_token>
