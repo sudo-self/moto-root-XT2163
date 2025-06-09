@@ -13,6 +13,8 @@ To root your Moto G Pure without a custom recovery
 
 > ⚠️ Make sure your bootloader is unlocked before flashing.
 
+![IMG_0287](https://github.com/user-attachments/assets/cfde917e-3813-44fb-9861-27265ca6f792)
+
 ---
 
 ## 📦 Restore Stock Firmware
