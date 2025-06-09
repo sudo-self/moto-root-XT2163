@@ -18,21 +18,19 @@ To root your Moto G Pure without a custom recovery
     whoami
        ```   
 
-> ⚠️ Make sure your bootloader is unlocked before flashing.
+> ⚠️  your bootloader must be unlocked before flashing ⚠️
 
    ```
      fastboot oem get_unlock_data
    ```
 > Then visit the motorola bootloader unlock site
- <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">Bootloader Unlock</a><br>
+ <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">Bootloader Unlock Program</a><br>
 
    ```
    fastboot oem unlock <your_unlock_token>
 
-   #example: fastboot oem unlock Y3D4N4L8LH3VZ7YYFDYQ
-
+   # Example: fastboot oem unlock Y3D4N4L8LH3VZ7YYFDYQ
    ```
-
 ---
 
 ## 📦 Restore Stock Firmware
