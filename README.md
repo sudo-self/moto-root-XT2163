@@ -10,6 +10,15 @@ To root your Moto G Pure without a custom recovery
     ```bash
     fastboot flash boot boot(magisk).img
     ```
+ 3. Then install a terminal and run 
+
+     ```
+    adb shell
+    su 
+    # grant permissions
+    whoami
+      
+    ```   
 
 > ⚠️ Make sure your bootloader is unlocked before flashing.
 
