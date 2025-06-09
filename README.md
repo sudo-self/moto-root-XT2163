@@ -22,7 +22,7 @@ To root your Moto G Pure without a custom recovery:
 - **Device:** Moto G Pure (Ellis – XT2163-4, USC)
 - **Firmware Version:** Android 12 (S3RH32.20-42-10-14)
 - **Download:**  
-  [XT2163-4 Stock Firmware – lolinet.com](https://mirrors.lolinet.com/firmware/motorola/ellis/official/USC/XT2163-4_ELLIS_USC_12_S3RH32.20-42-10-14_subsidy-DEFAULT_regulatory-DEFAULT_R2_CFC.xml.zip)
+  [XT2163-4 Stock Firmware](https://mirrors.lolinet.com/firmware/motorola/ellis/official/USC/XT2163-4_ELLIS_USC_12_S3RH32.20-42-10-14_subsidy-DEFAULT_regulatory-DEFAULT_R2_CFC.xml.zip)
 
 ---
 
