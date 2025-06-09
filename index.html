@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moto G Pure (XT2163-4) Root Guide</title>
+  <meta name="description" content="Root and restore stock firmware on Moto G Pure (Ellis, XT2163-4).">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #f7f9fc;
+      color: #222;
+      margin: 0;
+      padding: 0 1rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #2d2d2d;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    blockquote {
+      background: #fffae6;
+      padding: 0.75rem 1rem;
+      border-left: 4px solid #f0ad4e;
+      margin: 1rem 0;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background: #ccc;
+      margin: 2rem 0;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>📱 Moto G Pure (Ellis, XT2163-4)</h1>
+
+    <h2>🔓 Root Without Recovery</h2>
+    <p>To root your Moto G Pure without a custom recovery:</p>
+    <ol>
+      <li>Boot your device into <strong>fastboot mode</strong></li>
+      <li>Flash the Magisk-patched boot image:</li>
+    </ol>
+    <pre><code class="language-bash">fastboot flash boot boot(magisk).img</code></pre>
+
+    <blockquote>
+      ⚠️ Make sure your bootloader is unlocked before flashing.
+    </blockquote>
+
+    <pre><code class="language-bash">fastboot oem get_unlock_data</code></pre>
+
+    <p>Then visit the Motorola bootloader unlock site:  
+      <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a" target="_blank">Bootloader Unlock</a>
+    </p>
+
+    <p>Unlock the bootloader with your token:</p>
+    <pre><code class="language-bash">fastboot oem unlock &lt;your_unlock_token&gt;
+
+# Example:
+fastboot oem unlock Y3D4N4L8LH3VZ7YYFDYQ</code></pre>
+
+    <hr />
+
+    <h2>📦 Restore Stock Firmware</h2>
+
+    <h3>Download Stock Firmware</h3>
+    <ul>
+      <li><strong>Device:</strong> Moto G Pure (Ellis – XT2163-4, USC)</li>
+      <li><strong>Firmware Version:</strong> Android 12 (S3RH32.20-42-10-14)</li>
+      <li><strong>Download:</strong> 
+        <a href="https://mirrors.lolinet.com/firmware/motorola/ellis/official/USC/XT2163-4_ELLIS_USC_12_S3RH32.20-42-10-14_subsidy-DEFAULT_regulatory-DEFAULT_R2_CFC.xml.zip" target="_blank">
+          XT2163-4 Stock Firmware
+        </a>
+      </li>
+    </ul>
+
+    <hr />
+
+    <h3>Flash Instructions</h3>
+    <ol>
+      <li><strong>Unzip</strong> the downloaded firmware archive.</li>
+      <li><strong>Move</strong> the <code>FlashStock_ellis.sh</code> script to the <strong>root</strong> of the unzipped folder.</li>
+      <li><strong>Make the script executable:</strong></li>
+    </ol>
+    <pre><code class="language-bash">chmod +x FlashStock_ellis.sh</code></pre>
+
+    <ol start="4">
+      <li><strong>Connect</strong> your device in <strong>fastboot mode</strong>.</li>
+      <li><strong>Run the script:</strong></li>
+    </ol>
+    <pre><code class="language-bash">./FlashStock_ellis.sh</code></pre>
+
+    <hr />
+
+    <h2>⚙️ Requirements</h2>
+    <ul>
+      <li>Unlocked bootloader</li>
+      <li><code>fastboot</code> &amp; <code>adb</code> installed on your PC</li>
+      <li>USB cable &amp; working device connection</li>
+    </ul>
+
+    <hr />
+
+    <h2>📝 Notes</h2>
+    <ul>
+      <li>Flashing stock firmware will <strong>erase all data</strong>.</li>
+      <li>Double-check firmware version matches your device.</li>
+      <li>Use at your own risk — follow instructions carefully.</li>
+    </ul>
+
+    <hr />
+
+    <footer>
+      <p>View this project on GitHub: 
+        <a href="https://github.com/sudo-self/moto-root-XT2163" target="_blank">
+          sudo-self/moto-root-XT2163
+        </a>
+      </p>
+    </footer>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
