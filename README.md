@@ -1,4 +1,4 @@
-# Moto G Pure (Ellis, XT2163-4) – Root & Stock Firmware Guide
+# Moto G Pure (Ellis, XT2163-4)
 
 ## 🔓 Root Without Recovery
 
