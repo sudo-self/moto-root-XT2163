@@ -59,3 +59,8 @@ To root your Moto G Pure without a custom recovery
 - Double-check firmware version matches your device.
 - Use at your own risk — follow instructions carefully.
 
+
+
+
+
+
