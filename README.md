@@ -2,10 +2,10 @@
 
 ## 🔓 Root Without Recovery
 
-To root your Moto G Pure without a custom recovery:
+To root your Moto G Pure without a custom recovery
 
-1. Boot your device into **fastboot mode**.
-2. Flash the Magisk-patched boot image:
+1. Boot your device into **fastboot mode**
+2. Flash the Magisk-patched boot image
 
     ```bash
     fastboot flash boot boot(magisk).img
